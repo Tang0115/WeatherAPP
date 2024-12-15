@@ -39,7 +39,7 @@ class WeatherApp:
         self.temp_unit_button = ttkbootstrap.Button(self.root, text="Switch to °F", command=self.toggle_temp_unit, bootstyle="info")
 
     def get_weather(self, city):
-        API_key = "ee51e7607d807534ab39b96befc69995"
+        API_key = "Enter API here"
         url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_key}"
         res = requests.get(url)
 
